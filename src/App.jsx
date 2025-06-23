@@ -1,19 +1,24 @@
 import { useState } from "react";
 import "./App.css";
-import Form from "./Form";
-import Prediction from "./Prediction";
+import Navbar from "./Navbar";
+import Presentation from "./Presentation";
+import FirePrediction from "./FirePrediction";
+import Results from "./Results";
 import Tips from "./Tips";
 
 function App() {
   const [prediction, setPrediction] = useState(null);
+  const [formStatus, setFormStatus] = useState(false);
 
   return (
     <>
-      <h1>🔥 Fire Prediction 🔥</h1>
-      <Form setPrediction={setPrediction} />
-      <h1>Results:</h1>
-      <Prediction prediction={prediction} />
-      <hr></hr>
+      <Navbar />
+      <Presentation />
+      <FirePrediction
+        setPrediction={setPrediction}
+        setFormStatus={setFormStatus}
+      />
+      <Results prediction={prediction} formStatus={formStatus} />
       <Tips />
     </>
   );

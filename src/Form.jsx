@@ -1,4 +1,4 @@
-function Form({ setPrediction }) {
+function Form({ setPrediction, setFormStatus }) {
   function handleSubmit(e) {
     e.preventDefault();
 
@@ -29,6 +29,8 @@ function Form({ setPrediction }) {
       .then((data) => {
         if (data.result !== undefined) {
           setPrediction(data.result[0]);
+          setFormStatus(true);
+          // console.log(data.result[0]);
         } else {
           setPrediction("error");
         }
@@ -111,7 +113,7 @@ function Form({ setPrediction }) {
           type="number"
           name="drough_index"
           min="0"
-          max="100"
+          max="1"
           step="0.01"
           required
         />
@@ -128,7 +130,7 @@ function Form({ setPrediction }) {
         </label>
       </p>
       <label>
-        Month:
+        Fire season:
         <select name="fire_season" required>
           <option value="4">Peak: April, May, June</option>
           <option value="3">High: March, July, August</option>
