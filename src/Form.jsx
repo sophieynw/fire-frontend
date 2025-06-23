@@ -20,7 +20,7 @@ function Form({ setPrediction }) {
     // console.log(payload);
 
     // fetch api
-    fetch("https://fire-render.onrender.com/api", {
+    fetch(API_URL, {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
