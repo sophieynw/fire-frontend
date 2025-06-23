@@ -20,7 +20,7 @@ function Form({ setPrediction }) {
     // console.log(payload);
 
     // fetch api
-    fetch(import.meta.env.API_URL, {
+    fetch(import.meta.env.VITE_API_URL, {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
