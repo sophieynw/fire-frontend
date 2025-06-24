@@ -115,6 +115,10 @@ label.radio {
   max-width: 4rem;
 }
 
+input[type="radio" i] {
+  width: auto;
+}
+
 form input[type="submit"] {
   width: auto;
   padding: 7px 15px;
@@ -182,6 +186,10 @@ nav ul li a::after {
   form label {
     display: flex;
     flex-direction: column;
+  }
+
+  label.radio {
+    max-width: 4rem;
   }
 
   nav ul li {
