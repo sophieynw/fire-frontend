@@ -1,3 +1,5 @@
+import Button from "@mui/material/Button";
+
 function Form({ setPrediction, setFormStatus }) {
   function handleSubmit(e) {
     e.preventDefault();
@@ -138,7 +140,10 @@ function Form({ setPrediction, setFormStatus }) {
           <option value="1">Low: October, November, December</option>
         </select>
       </label>
-      <button type="submit">Submit</button>
+      {/* <button type="submit">Submit</button> */}
+      <Button type="submit" variant="outlined" className="btn">
+        Submit
+      </Button>
     </form>
   );
 }

@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./Navbar";
 import Presentation from "./Presentation";
+import ValidInputs from "./ValidInputs";
 import FirePrediction from "./FirePrediction";
 import Results from "./Results";
 import Tips from "./Tips";
@@ -14,6 +15,7 @@ function App() {
     <>
       <Navbar />
       <Presentation />
+      <ValidInputs />
       <FirePrediction
         setPrediction={setPrediction}
         setFormStatus={setFormStatus}

@@ -21,7 +21,7 @@ function FirePrediction({ setPrediction, setFormStatus }) {
             <Form setPrediction={setPrediction} setFormStatus={setFormStatus} />
           </Typography>
         </AccordionDetails>
-      </Accordion>{" "}
+      </Accordion>
     </>
   );
 }
