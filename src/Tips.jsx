@@ -1,26 +1,33 @@
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
 function Tips() {
   return (
     <>
-      <h3>✅ Valid inputs</h3>
-      <ul>
-        <li>Region ID: 1 to 50</li>
-        <li>Temperature: -10 to 60</li>
-        <li>Humidity: 0 to 100</li>
-        <li>Wind speed: 0 to 50</li>
-        <li>Rainfall: 0 to 150</li>
-        <li>Drought index: 0 to 1</li>
-        <li>
-          Previous fire: was there a fire the previous day in the same region?
-        </li>
-      </ul>
-      <h3>💡 Tips: Characteristics associated with forest fires</h3>
-      <ul>
-        <li>Grassland and Shrubland vegetation</li>
-        <li>Higher wind speed</li>
-        <li>Higher temperatures</li>
-        <li>Lower humidity</li>
-        <li>Occurence of fire on previous day</li>
-      </ul>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1-content"
+          id="panel1-header"
+        >
+          <Typography>💡 Tips</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography component="div">
+            <p>Characteristics associated with forest fires:</p>
+            <ul>
+              <li>Grassland and Shrubland vegetation</li>
+              <li>Higher wind speed</li>
+              <li>Higher temperatures</li>
+              <li>Lower humidity</li>
+              <li>Occurence of fire on previous day</li>
+            </ul>
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
     </>
   );
 }
