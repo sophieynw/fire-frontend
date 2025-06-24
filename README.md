@@ -30,4 +30,4 @@ To run this project, you will need to add the following environment variables to
 
 ## Appendix
 
-Code for backend Flask server repo can be found [here](https://github.com/sophieynw/fire-backend)
+Repo for backend Flask server can be found [here](https://github.com/sophieynw/fire-backend)
