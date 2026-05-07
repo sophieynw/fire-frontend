@@ -31,3 +31,4 @@ To run this project, you will need to add the following environment variables to
 ## Appendix
 
 Repo for backend Flask server can be found [here](https://github.com/sophieynw/fire-backend)
+Jupyter notebook analysis can be found [here](https://github.com/sophieynw/ai_ml_notebooks/blob/main/2-FireOccurences-Notebook.ipynb)
